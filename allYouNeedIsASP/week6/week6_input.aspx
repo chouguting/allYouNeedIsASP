@@ -88,7 +88,41 @@
             <asp:Button ID="addToListButton" runat="server" Text="新增" />
             <asp:Button ID="deleteItemButton" runat="server" Text="刪除" />
             <asp:Button ID="clearItemButton" runat="server" Text="清空" />
-        </div>
+            <asp:Button ID="clearFirstItem" runat="server" Text="清除第一個" />
+        <hr/>
+            <asp:ListBox ID="brandListBox" runat="server" SelectionMode="Multiple">
+                <asp:ListItem>Microsoft</asp:ListItem>
+                <asp:ListItem>Apple</asp:ListItem>
+                <asp:ListItem>Google</asp:ListItem>
+                <asp:ListItem>Huawei</asp:ListItem>
+            </asp:ListBox>
+
+            <br />
+            <asp:Button ID="brandListBoxButton" runat="server" Text="判斷" />
+            <br/>
+            <asp:Label ID="brandLabel" runat="server" Text=""></asp:Label>
+        
+            <hr/>
+            <asp:Panel ID="Panel1" GroupingText="iphone" runat="server">
+                <asp:CheckBoxList ID="phoneCheckBoxList" runat="server">
+                    <asp:ListItem Value="27600">pixel 4</asp:ListItem>
+                    <asp:ListItem Value="11990">pixel 4a</asp:ListItem>
+                    <asp:ListItem Value="15990">pixel 4a 5G</asp:ListItem>
+                    <asp:ListItem Value="18990">pixel 5</asp:ListItem>
+                </asp:CheckBoxList>
+            </asp:Panel>
+            <br/>
+            <asp:Panel ID="Panel2" GroupingText="付款方式" runat="server" >
+                <asp:RadioButtonList ID="shipmentRadioButtonList" runat="server" RepeatDirection="Horizontal">
+                    <asp:ListItem Value="1">貨到付款</asp:ListItem>
+                    <asp:ListItem Value="3">刷卡</asp:ListItem>
+                </asp:RadioButtonList>
+            </asp:Panel>
+            <asp:Label ID="phoneCostLabel" ForeColor="Blue" runat="server" Text=""></asp:Label>
+            &nbsp;
+            <asp:Button ID="calPhoneCost" runat="server" Text="計算" />
+            </div>
+
     </form>
 </body>
 </html>

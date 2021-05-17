@@ -17,4 +17,21 @@ Partial Class week7_week7_autoPostBack
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         radioOutput.Text = "S3"
     End Sub
+
+    Private Sub testDropDownList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles testDropDownList.SelectedIndexChanged
+        dropDownListOutput.Text = testDropDownList.SelectedValue
+    End Sub
+
+    Protected Sub groupDropDownList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles groupDropDownList.SelectedIndexChanged
+        If groupDropDownList.SelectedIndex = 1 Then
+            departmentDropDownList.Items.Clear()
+            departmentDropDownList.Items.Add("資工系")
+            departmentDropDownList.Items.Add("電機系")
+        ElseIf groupDropDownList.SelectedIndex = 2 Then
+            departmentDropDownList.Items.Clear()
+            departmentDropDownList.Items.Add("系工系")
+            departmentDropDownList.Items.Add("河工系")
+        End If
+
+    End Sub
 End Class

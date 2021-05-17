@@ -21,7 +21,22 @@
             <br/>
             <asp:Label ID="radioOutput"  runat="server" Text=""></asp:Label>
             <br/>
-
+            <hr/>
+            <asp:DropDownList ID="testDropDownList" runat="server" AutoPostBack="True">
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem Value="1號">001</asp:ListItem>
+                <asp:ListItem Value="2號">002</asp:ListItem>
+                <asp:ListItem Value="3號">003</asp:ListItem>
+            </asp:DropDownList>
+            <br/>
+            <asp:Label ID="dropDownListOutput"  runat="server" Text=""></asp:Label>
+            <hr/>
+            <asp:DropDownList ID="groupDropDownList" runat="server" AutoPostBack="True">
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem>電資學院</asp:ListItem>
+                <asp:ListItem>工學院</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="departmentDropDownList" runat="server"></asp:DropDownList>
         </div>
     </form>
 </body>

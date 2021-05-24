@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="httpObject.aspx.vb" Inherits="week9_httpObject" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="week9_httpObject.aspx.vb" Inherits="week9_httpObject" %>
 
 <!DOCTYPE html>
 

@@ -25,7 +25,6 @@ Partial Class week11_week11_statementHandling
         Dim password As String = passwordText.Text
         '轉址且傳遞參數到afterLogin.aspx
         Response.Redirect("afterLogin.aspx?User=" & Server.UrlEncode(userName) & "&Pass=" & Server.UrlEncode(password))
-
     End Sub
 
     Protected Sub newCookie_Click(sender As Object, e As EventArgs) Handles newCookie.Click

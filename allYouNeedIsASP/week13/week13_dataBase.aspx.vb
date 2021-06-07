@@ -11,7 +11,7 @@ Partial Class week13_week13_dataBase
         Dim strDbCon, strSQL As String
         strDbCon = "Data Source=(LocalDB)\MSSQLLOCALDB;" &
                    "AttachDbFilename=" &
-                   Server.MapPath("App_Data\School.mdf") &
+                   Server.MapPath("..\App_Data\School.mdf") &
                    ";Integrated Security=True"
         objCon = New SqlConnection(strDbCon)
         objCon.Open()
@@ -40,7 +40,7 @@ Partial Class week13_week13_dataBase
         Dim strDbCon, strSQL As String
         strDbCon = "Data Source=(LocalDB)\MSSQLLOCALDB;" &
                    "AttachDbFilename=" &
-                   Server.MapPath("App_Data\School.mdf") &
+                   Server.MapPath("..\App_Data\School.mdf") &
                    ";Integrated Security=True"
         objCon = New SqlConnection(strDbCon)
         objCon.Open()
@@ -66,7 +66,7 @@ Partial Class week13_week13_dataBase
         Dim strDbCon, strSQL As String
         strDbCon = "Data Source=(LocalDB)\MSSQLLOCALDB;" &
                    "AttachDbFilename=" &
-                   Server.MapPath("App_Data\School.mdf") &
+                   Server.MapPath("..\App_Data\School.mdf") &
                    ";Integrated Security=True"
         objCon = New SqlConnection(strDbCon)
         objCon.Open()

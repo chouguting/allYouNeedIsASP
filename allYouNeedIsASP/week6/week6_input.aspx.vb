@@ -140,4 +140,8 @@ Partial Class week6_week6_input
         End If
 
     End Sub
+
+    Protected Sub phoneCheckBoxList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles phoneCheckBoxList.SelectedIndexChanged
+
+    End Sub
 End Class

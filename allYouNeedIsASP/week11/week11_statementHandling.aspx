@@ -11,7 +11,6 @@
     <form id="form1" runat="server">
         <div>
             <h3>View State</h3>
-            Name:
             <asp:TextBox ID="nameTextbox" runat="server"></asp:TextBox>
             <asp:Button ID="sendNameButton" runat="server" Text="送出" />
             <br/>
